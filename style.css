@@ -68,6 +68,14 @@ html {
     gap: 15px;
 }
 
+.bottom-bar .main-tools i:nth-child(4) {
+    color: greenyellow;
+}
+
+.bottom-bar .main-tools i .description {
+    color: white;
+}
+
 .bottom-bar .end-button:hover {
     background-color: #4a4a4a;
 }
@@ -99,3 +107,21 @@ html {
     padding-inline: 10px;
     font-size: 15px;
 }
+
+.container .speaker-full {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: white;
+}
+
+.container .speaker-full span:first-child, .container .speaker-full span:last-child {
+    margin-right: 10px;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+/* .container .speaker-full:last-child {
+    border: 2px solid lime;
+} */
