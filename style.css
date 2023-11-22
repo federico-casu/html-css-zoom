@@ -12,7 +12,7 @@ html {
 
 .container {
     height: 100vh;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     background-color: black;
     position: relative;
     display: flex;
@@ -22,16 +22,7 @@ html {
     row-gap: 20px;
     column-gap: 7px;
     padding: 6vh 5vh 15vh;
-    overflow: auto;
-}
-
-.bottom-bar {
-    height: 10vh;
-    border: 2px solid lime;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    /* overflow: auto; */
 }
 
 .container .card {
@@ -46,4 +37,48 @@ html {
     height: 100%;
     display: block;
     object-fit: cover;
+}
+
+.bottom-bar {
+    height: 10vh;
+    /* border: 2px solid lime; */
+    background-color: #222222;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-bar .video-audio {
+
+}
+
+.bottom-bar .main-tools {
+
+}
+
+.bottom-bar {
+    padding-inline: 10px;
+}
+
+.bottom-bar a {
+    text-decoration: none;
+    color: red;
+    text-transform: capitalize;
+}
+
+.bottom-bar .end-button {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 10px 0;
+}
+
+.bottom-bar .end-button:hover {
+    background-color: #4a4a4a;
 }
