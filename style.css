@@ -51,18 +51,8 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.bottom-bar .video-audio {
-
-}
-
-.bottom-bar .main-tools {
-
-}
-
-.bottom-bar {
-    padding-inline: 10px;
+    padding-inline: 10px 0;
+    font-size: 25px;
 }
 
 .bottom-bar a {
@@ -71,14 +61,41 @@ html {
     text-transform: capitalize;
 }
 
+.bottom-bar .video-audio, .bottom-bar .main-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.bottom-bar .end-button:hover {
+    background-color: #4a4a4a;
+}
+
+.bottom-bar i {
+    text-align: center;
+}
+
+.bottom-bar i:hover {
+    cursor: pointer;
+}
+
+.bottom-bar i .description {
+    display: block;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.fa-chevron-up {
+    font-size: 15px;
+    height: 100%;
+}
+
 .bottom-bar .end-button {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-inline: 10px 0;
-}
-
-.bottom-bar .end-button:hover {
-    background-color: #4a4a4a;
+    padding-inline: 10px;
+    font-size: 15px;
 }
