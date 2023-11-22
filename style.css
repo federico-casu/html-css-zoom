@@ -10,6 +10,10 @@ html {
     font-family: sans-serif;
 }
 
+
+
+
+
 .container {
     height: 100vh;
     /* border: 5px solid red; */
@@ -30,6 +34,7 @@ html {
     height: calc((100% / 5) - ((15px * 4) / 5)); 
     flex-basis: calc((100% / 7) - ((10px * 6) / 7));
     background-color: yellow;
+    position: relative;
 }
 
 .card img {
@@ -119,9 +124,28 @@ html {
     margin-right: 10px;
     background-color: grey;
     border-radius: 5px;
-    padding: 2px 5px;
+    padding: 3px 5px;
 }
 
-/* .container .speaker-full:last-child {
-    border: 2px solid lime;
+.container .speaker-full span:first-child:hover , .container .speaker-full span:last-child:hover {
+    cursor: pointer;
+}
+
+.container .card .card-info {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(200, 200, 200, 0.4);
+    font-size: 12px;
+    padding: 2px 4px;
+}
+
+/* html, body{
+    margin:0;
+    padding:0;
+}
+
+h1, p{
+    margin:0 0 1em;
 } */
